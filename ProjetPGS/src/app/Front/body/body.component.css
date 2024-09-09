@@ -1,0 +1,140 @@
+.hero {
+    background-image: url('https://fptsoftware.com/-/media/project/fpt-software/fso/blog/hp-content/1/revolution-in-the-pipeline-part-1-disruptive-technologies-in-oil-and-gas-industry.jpg?modified=20231014083757'); /* Update this path with the actual path to your image */
+    background-size: cover; /* Cover ensures the background image fully covers the area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    min-height: 100vh; /* Adjust this value based on your design needs */
+}
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+ 
+/* Ensure any content inside the hero is placed above the overlay */
+.hero * {
+    position: relative;
+    z-index: 2;
+}
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #383C40; /* Dark background of the container */
+    padding: 20px;
+}
+ 
+.card {
+    background-color: #464B4F; /* Card background */
+    color: #fff; /* Text color */
+    width: 320px; /* Increased width */
+    height: 400px; /* Increased height */
+    margin: 10px; /* Sufficient margin to maintain space around */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Card shadow */
+    padding: 20px;
+    transition: transform 0.3s ease-in-out; /* Smooth transform effect */
+ 
+   
+}
+ 
+.card:hover {
+    transform: translateY(-10px); /* Raise the card on hover */
+}
+ 
+.icon img {
+    display: block;
+    margin: 0 auto; /* Centers the icon horizontally */
+    width: 100px; /* Adjusted width as necessary */
+    height: 100px; /* Adjusted height as necessary */
+}
+ 
+.content h3 {
+    margin-top: 20px; /* Increase top margin to push the title further down */
+    margin-bottom: 10px; /* Existing bottom margin */
+    font-size: 1.5rem; /* Larger font size for visibility */
+    text-align: center; /* Center the text horizontally */
+    color: #10C3B6; /* Change the text color */
+}
+ 
+.content p {
+    font-size: 1.1rem; /* Larger text size for readability */
+    line-height: 1.6;
+    text-align: center; /* Center the text horizontally */
+    color: #FFFFFF; /* Set text color to white */
+    font-weight: bold; /* Make the text bold */
+}
+.header-container {
+    background-color: #383C40; /* Match the card container background or use a different one */
+    padding: 20px 0; /* Padding for better spacing */
+    text-align: center; /* Center align the text */
+}
+ 
+.main-header {
+    color: #FFFFFF; /* White color for the text */
+    font-size: 2.5rem; /* Large font size for visibility */
+    font-weight: bold; /* Bold font weight */
+    margin: 0 auto; /* Centering horizontally */
+    width: 80%; /* Adjust width as necessary */
+    text-transform: uppercase; /* Uppercase letters for stylistic preference */
+}
+.optimized-operations {
+    color: #FFFFFF; /* Sets the text color to white */
+    font-weight: bold; /* Makes the text bold */
+    /* Additional styling options can be added here if needed */
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+.main-title {
+    color: #10C3B6; /* White text color */
+    font-size: 1.5rem; /* Larger font size for main title */
+    font-weight: bold; /* Bold font weight */
+    text-align: center; /* Center the text horizontally */
+    margin-bottom: 10px; /* Space between h1 and h2 */
+    margin-top: 80px;
+}
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Fond sombre semi-transparent */
+  }
+ 
+  .modal-content {
+    background: rgba(255, 255, 255, 0.2); /* Blanc avec 20% d'opacité */
+    /* autres styles restent inchangés */
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  iframe {
+    width: 100%; /* Prend toute la largeur du modal-content */
+    height: 450px; /* Hauteur ajustée pour une meilleure visibilité */
+    border: none; /* Enlever la bordure par défaut */
+  }
+ 
+  .close {
+    position: absolute;
+    top: 10px;  /* Ajustez selon le besoin */
+    right: 15px; /* Ajustez selon le besoin */
+    font-size: 30px; /* Taille de la croix */
+    font-weight: bold;
+    color: #fff; /* Couleur blanche pour visibilité */
+    cursor: pointer; /* Indique que c'est cliquable */
+    text-shadow: 0 1px 0 #000; /* Ombre pour meilleure visibilité */
+  }

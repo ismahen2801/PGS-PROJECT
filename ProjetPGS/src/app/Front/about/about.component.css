@@ -1,0 +1,185 @@
+.about-section {
+    padding: 50px;
+  }
+ 
+  .about-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+ 
+  h2, h3 {
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+  }
+ 
+  p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+ 
+  /* Ajouter un padding au corps */
+body {
+    padding-top: 100px; /* Ajuster en fonction de la hauteur de votre header */
+  }
+ 
+  /* Assurez-vous que le header a une hauteur fixe */
+  header {
+    height: 100px; /* Exemple de hauteur fixe */
+    /* Autres styles pour le header */
+  }
+ 
+   
+ 
+  .bloc {
+    flex: 1;
+    padding: 150px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+ 
+  @media screen and (max-width: 768px) {
+    .blocs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 300px; /* Ajuster la hauteur selon vos besoins */
+        background-color: #f0f0f0;
+        margin-top: 300px; /* Déplacer les blocs de 100px vers le bas */
+      }
+     
+ 
+    @media screen and (min-width: 768px) {
+    .bloc {
+      margin-bottom: 150px;
+    }
+}
+ 
+ 
+footer {
+    height: auto; /* Ajustez la hauteur en fonction du contenu */
+    padding: 20px; /* Ajoutez un padding pour l'espace intérieur du footer */
+    background-color: #333; /* Couleur de fond du footer */
+    color: white; /* Couleur du texte du footer */
+  }
+ 
+   
+ 
+ 
+ 
+ 
+ 
+  }
+ 
+  #about {
+    background-color:  rgba(212, 211, 223, 0.3);
+   
+ 
+    padding: 200px 0;
+  }
+ 
+  #about h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #271d27;
+    margin-bottom: 20px;
+  }
+ 
+  #about h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+ 
+  #about p {
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+ 
+  #about .read-more {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #ffc107;
+    transition: 4.0s;
+  }
+ 
+  #about {
+    margin-top: 300px; /* Ajouter de l'espace entre le header et la section "About" */
+  }
+ 
+  .stats-bg {
+    background-image: url('/assets/img/about.jpg'); /* Remplacez 'chemin/vers/votre/image.jpg' par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+ 
+ 
+ 
+ 
+   
+ 
+.card {
+    color: white; /* Couleur du texte à l'intérieur de la carte */
+}
+ 
+.custom-bg {
+    background-color: #271d27; /* Couleur de fond bleue */
+    transition: transform 0.3s; /* Ajout de transition pour l'effet de zoom */
+}
+ 
+ 
+.custom-bg:hover {
+    transform: scale(1.2); /* Zoom au survol */
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+ }
+ 
+ .video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Assurez-vous que la vidéo est en arrière-plan */
+}
+.col-lg-6.pt-4.pt-lg-0 {
+  position: relative;
+  z-index: 1; /* Plus élevé que la vidéo */
+  background-color: rgba(212, 211, 223, 0.3);
+  padding: 20px;
+ 
+ 
+}
+#about h4 {
+  color: #634263; /* Changer en rouge */
+  font-family: 'Arial', sans-serif; /* Changer la police à Arial */
+  font-size: 20px; /* Vous pouvez également ajuster la taille de la police si nécessaire */
+  font-weight: bold; /* Optionnel: Rendre le texte en gras */
+}
+.col-md-6 img {
+  float: right; /* Fait flotter l'image à gauche du texte */
+  margin-right: 30px; /* Ajoute un peu d'espace entre l'image et le texte */
+  width: 70%; /* Ajustez la largeur de l'image selon vos besoins */
+  height: auto; /* Maintient le ratio de l'image */
+}

@@ -1,0 +1,20 @@
+/* emission.component.css */
+
+/* Styles for the container of the canvas to ensure it's centered and has a border */
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc; /* A light grey border around the canvas */
+    padding: 20px; /* Some padding around the canvas */
+    margin: 20px auto; /* Centers the chart container horizontally and gives some space above and below */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for a little depth */
+    max-width: 800px; /* Limits the width of the canvas container */
+    background-color: #fff; /* White background for the chart area */
+  }
+  
+  canvas {
+    width: 100% !important; /* Ensures the canvas fills the container width */
+    height: 400px !important; /* Sets a fixed height for the canvas */
+  }
+  

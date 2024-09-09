@@ -1,0 +1,8 @@
+#portfolio {   background-color: #333;  /* Couleur de fond gris foncé */}
+.container.section {   
+    width: 100%;  
+    /* Utilise toute la largeur disponible */
+    max-width: none;
+     /* S'assure qu'il n'y a pas de largeur maximale restreignant l'élément */
+
+    }

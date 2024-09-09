@@ -1,0 +1,67 @@
+
+.footer {
+    background-color: rgba(84, 83, 99, 0.9); /* Slightly less transparent dark gray background */
+    color: #ffffff; /* White text color for contrast */
+    padding: 10px 0; /* Padding for some spacing inside the footer */
+    margin-top: 10px;
+     /* You can set this to 0 or adjust as necessary */
+     /* Ensure it matches the footer's background color */
+}
+ 
+   
+ 
+ 
+.footer a {
+    color: #ffffff; /* Ensures that links are also white */
+}
+ 
+.footer a:hover {
+    color: #dddddd; /* Lighter grey on hover for better user interaction feedback */
+}
+ 
+.footer h4 {
+    color: #ffffff; /* White color for subheadings */
+}
+.footer-contact-form .form-control, .footer-contact-form textarea {
+    background-color: #fdfbfd; /* Couleurs de fond plus foncées pour les champs de saisie */
+    border: none;
+    border-radius: 8px; /* Ajustez cette valeur pour plus ou moins d'arrondi */
+    color: #333; /* Couleur du texte pour le contraste */
+    margin-bottom: 10px; /* Espace entre les champs */
+    padding: 10px; /* Padding intérieur des contrôles de formulaire */
+    width: 75%; /* Réduire la largeur à 75% de l'espace disponible */
+}
+ 
+.footer-contact-form textarea {
+    border-radius: 8px; /* Même rayon de bordure pour le textarea */
+    padding: 10px; /* Padding intérieur du textarea */
+    width: 75%; /* Réduire la largeur du textarea à 75% également */
+}
+ 
+.footer-contact-form .btn-primary {
+    background-color: #10C3B6; /* Blue button background */
+    border: none;
+    border-radius: 8px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Larger button padding */
+}
+ 
+.footer-contact-form .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+.logo-link {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    text-decoration: none; /* Removes underline from the link */
+    color: inherit; /* Inherits text color from parent elements */
+}
+ 
+.logo {
+    height: 40px; /* Controls the size of the logo */
+    margin-right: 10px; /* Adds space between the logo and the text */
+}
+ 
+.sitename {
+    font-size: 16px; /* Smaller font size for the title */
+    color: #FFFFFF; /* Adjust the color as needed */
+    font-weight: bold; /* Optional: if you want the title to be bold */
+}

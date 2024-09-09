@@ -1,0 +1,37 @@
+/* Container styling for the logo and sitename */
+.logo {
+    display: flex; /* ensures flexbox properties are applied */
+    align-items: center; /* centers items vertically */
+    justify-content: flex-start; /* aligns items to the left side */
+    width: 100%; /* ensures it spans the full width of its container */
+    text-decoration: none; /* removes underline from the link */
+}
+.logo img {
+    height: 100px; /* Set specific height, adjust as needed */
+    width: 40px;  /* Adjust width automatically to maintain aspect ratio */
+    margin-right: 10px; /* Space between logo and text */
+}
+.nav-link {
+    position: relative; /* Position relative pour positionner la ligne */
+    color: white; /* Couleur par défaut */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    transition: color 0.3s; /* Animation de transition */
+  }
+ 
+  .nav-link::after {
+    content: ''; /* Contenu vide pour la ligne */
+    position: absolute; /* Position absolue par rapport au lien */
+    left: 0; /* Alignement à gauche du lien */
+    bottom: 0px; /* Décalage vers le bas pour la ligne */
+    width: 100%; /* Largeur de la ligne */
+    height: 2px; /* Hauteur de la ligne */
+    background-color: rgba(49, 154, 224, 0.651); /* Couleur de la ligne */
+    transform: scaleX(0); /* Échelle horizontale de la ligne à zéro (invisible) */
+    transition: transform 0.3s; /* Animation de transition */
+  }
+ 
+  .nav-link:hover::after {
+    transform: scaleX(1); /* Échelle horizontale de la ligne à 1 (visible) au survol */
+    color: rgba(49, 154, 224, 0.651); /* Couleur au survol */
+  text-decoration: underline rgba(49, 154, 224, 0.651); /* Soulignement rouge au survol */
+  }

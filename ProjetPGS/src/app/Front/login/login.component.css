@@ -1,0 +1,106 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('/assets/img/icon7.jpg') no-repeat center center fixed; /* Update the path as needed */
+    background-size: cover;
+  }
+  .logo-container {
+    position: absolute;
+    top: 10px; /* Adjust this value as needed to align with the login box */
+    left: 10px;
+    display: flex;
+    align-items: center; /* Centers the items vertically within the container */
+  }
+  /* Styling for the logo image */
+  .logo-container img {
+    width: 40px;  /* Adjust based on your logo size */
+    height: auto;
+  }
+    /* Optional: Adding a little styling for the title next to the logo */
+    .logo-container h1 {
+        margin-left: 10px; /* Space between logo and text */
+        color: white; /* Text color */
+        font-size: 30px; /* Text size */
+      }
+      .logo-container h1 {
+        font-size: 20px;
+      }
+   
+ 
+  .login-box {
+  padding: 50px; /* Increased padding for a larger appearance */
+  background: rgba(240, 238, 238, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px; /* Increased width */
+  margin-top: 20px; /* Adjust if necessary */
+}
+ 
+  .login-title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+ 
+  .input-group {
+    margin-bottom: 20px;
+  }
+ 
+  .input-group input[type="text"],
+  .input-group input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none; /* No borders */
+    border-radius: 30px; /* Maintain rounded corners */
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent input fields */
+    outline: none; /* Removes outline when focused */
+  }
+ 
+  .input-group input[type="checkbox"] {
+    margin-right: 10px;
+  }
+ 
+  .actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .actions button {
+    background-color: #10C3B6;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 30px; /* Rounded buttons */
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+ 
+  .actions button:hover {
+    background-color: #0056b3;
+  }
+ 
+  .actions .forgot-password {
+    color: #007bff;
+    text-align: center;
+    text-decoration: none;
+  }
+ 
+  .social-login button {
+    width: 49%;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: none;
+    padding: 8px;
+    border-radius: 30px; /* Rounded social buttons */
+    cursor: pointer;
+    display: inline-block;
+  }
+ 
+  .social-login button:first-child {
+    margin-right: 2%;
+  }
+ 

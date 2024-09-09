@@ -1,0 +1,28 @@
+<div class="team-container">
+    <h1 class="team-header">Meet Our Team</h1>
+    <p class="team-description">
+        Our team consists of seasoned professionals<br>
+        who identify trends, correlations, and hidden<br>
+        patterns in data, enabling businesses to make<br>
+        informed decisions and optimize their processes.
+    </p>
+   
+    <h2 class="team-leadership">Leadership</h2>
+   
+    <div class="team-members">
+        <div *ngFor="let member of teamMembers" class="team-member">
+            <div class="image-container">
+                <img [src]="member.imagePath" [alt]="member.altText">
+            </div>
+            <p class="member-name">{{ member.name }}</p>
+            <div class="social-links">
+                <a href="{{ member.facebook }}" class="social-link">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="{{ member.linkedin }}" class="social-link">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

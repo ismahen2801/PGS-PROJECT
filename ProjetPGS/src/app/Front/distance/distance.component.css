@@ -1,0 +1,26 @@
+/* Styles to ensure the container is centered and framed */
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* This takes the full height of the viewport */
+    margin: 0;
+    background-color: #f4f4f4; /* A light grey background */
+  }
+  
+  /* Styling for the canvas container */
+  canvas-container {
+    display: block;
+    width: 80%; /* Adjust width as necessary */
+    max-width: 800px; /* Maximum width of the canvas element */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+    border: 2px solid #ccc; /* Light grey border */
+    background-color: #fff; /* White background for the canvas */
+  }
+  
+  canvas {
+    width: 100% !important;
+    height: 400px !important; /* Adjust height as needed */
+  }
+  

@@ -1,0 +1,42 @@
+<div class="login-container">
+  <div class="logo-container">
+    <img src="/assets/img/logo_appli.png" alt="SmartFuel Manager Logo">
+    <h1>SmartFuel Manager</h1>
+  </div>
+  <div class="login-container">
+    <div class="login-box">
+      <h2 class="login-title">Have an account?</h2>
+      <form class="login-form" #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+        <!-- Email input -->
+        <div class="input-group">
+          <input type="text" id="email" name="email" placeholder="Email" required [(ngModel)]="email" #emailModel="ngModel">
+          <div *ngIf="loginForm.submitted && !email" class="text-danger">Email is required</div>
+          <div *ngIf="email && !isValidEmail(email)" class="text-danger">Invalid email format</div>
+        </div>
+ 
+        <!-- Password input -->
+        <div class="input-group">
+          <input type="password" id="password" name="password" placeholder="Password" required minlength="8" [(ngModel)]="password" #passwordModel="ngModel">
+          <label class="form-label" for="password"></label>
+          <div *ngIf="loginForm.submitted && !password" class="text-danger">Password is required</div>
+          <div *ngIf="password && password.length < 8" class="text-danger">Password must be at least 8 characters long</div>
+        </div>
+ 
+        <!-- Checkbox -->
+        <div class="input-group">
+          <input type="checkbox" id="rememberMe" name="rememberMe" [(ngModel)]="rememberMe">
+          <label for="rememberMe">Remember Me</label>
+        </div>
+ 
+        <!-- Actions -->
+        <div class="actions">
+          <button type="submit" class="sign-in-button">SIGN IN</button>
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+ 
+        <!-- Social Login -->
+       
+      </form>
+    </div>
+  </div>
+ 
